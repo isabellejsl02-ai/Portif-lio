@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+     <!-- BOOTSTRAP ICONS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <!-- FIM BOOTSTRAP ICONS -->
+    <title>Isabelle | Web & Design</title>
+
+    <script src="menu.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+          <div class="logo">  
+           <a href="#">
+              <img src="images/images.png" alt="Logo da isabelle | Web & Design">
+           </a>
+          </div> <!--logo-->
+
+          <nav :class="menu-desktop">
+            <Ul>
+                <Li><a href="Inicio">Inicio</a></Li>
+                <Li><a href="Especialidades">Especialidades</a></Li>
+                <Li><a href="Sobre">Sobre</a></Li>
+            </Ul>
+          </nav>
+
+            <div class="btn-Contato">
+            <a href="https://wa.me/5511975422800" target="_blank" class="btn"> ENTRE EM CONTATO</a>
+            </div><!--btn-Contato--> 
+
+           <div class="btn-abir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+           </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+              <div class="btn-fechar">
+                 <i class="bi bi-x-lg"></i>
+              </div>
+
+            <nav">
+            <Ul>
+                <Li><a href="#Inicio">Inicio</a></Li>
+                <Li><a href="#Especialidade">Especialidades</a></Li>
+                <Li><a href="#Sobre">Sobre</a></Li>
+                <li><a href="#Entar em Contato"> Entar em Contato</li>
+            </Ul>
+          </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface--> 
+    </header>
+    <main> 
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="text-topo-site">
+             <h1>Organizando ideias em soluções digitais simples<span>.</span></h1> 
+             <p>Ofereço serviços digitais básicos como criação de materiais no <br>
+              Canva, organização de documentos, Word, Excel e sites simples.<br>
+              Foco em clareza, organização e compromisso com prazos. </p>
+            </div><!--text-topo-site-->
+            <div class="img-topo-site">
+                <img src="images/Design sem nome.png" alt="">
+            </div><!--img-topo-site-->
+          </div><!--flex-->
+        </div><!--interface-->
+      </section> <!--topo-do-site-->
+      <section class="Especialidades">
+        <div class="interface">
+          <h2 class="titulo"> MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+          <div class="Especialidades-box">
+               <i class="bi bi-code-square"></i>
+               <h3>Sites simples</h3>
+               <p>Criação de sites básicos e organizados para apresentar
+                 ideias, projetos pessoais ou pequenos negócios,
+                 com foco em visual limpo e funcional.</p>
+          </div><!--Especialidades-box-->
+
+          <div class="Especialidades-box">
+               <i class="bi bi-palette"></i>
+               <h3>Design no Canva</h3>
+               <p>Criação de capas de trabalhos, portfólios, 
+                posts e materiais visuais personalizados,
+                 seguindo uma identidade simples e moderna.</p>
+          </div><!--Especialidades-box-->
+
+          <div class="Especialidades-box">
+               <i class="bi bi-filetype-docx"></i>
+               <h3>Word & Excel</h3>
+               <p>Digitação, formatação de trabalhos escolares ou pessoais,
+                 criação de documentos organizados e planilhas simples.</p>
+          </div><!--Especialidades-box-->
+
+          </div><!--flex-->
+         </div><!--interface-->
+      </section><!--Especialidades-->
+      <Section class="Sobre">
+        <div class="interface">
+             <div class="flex">
+              <div class="img Sobre">
+                  <img src="images/Design sem nome (2).png" alt="">
+              </div><!--img Sobre-->
+
+              <div class="text-sobre">
+                <h2>MUITO PRAZER, <span> SOU ISABELLE.</span></h2>
+                <P>trabalho na criação de sites e materiais digitais. Tenho atenção aos 
+                  detalhes e gosto de transformar ideias em projetos funcionais, organizados e visualmente atraentes.
+                   Estou sempre buscando aprender coisas novas para aprimorar minhas habilidades e oferecer trabalhos de qualidade.</P>
+                   <P>Além disso, adoro explorar novas ferramentas e técnicas para deixar meus projetos cada vez melhores. 
+                    Meu objetivo é entregar soluções que sejam práticas, bonitas e que realmente ajudem quem precisa, sempre com dedicação e cuidado.</P>
+              <div class="btn-Social">
+                <a href=""><button><i class="bi bi-instagram"></i></button></a>
+              </div><!--bnt-Sobre-->
+              </div><!--text-sobre-->
+             </div><!--flex-->
+        </div><!--interface-->       
+      </Section><!--Sobre-->
+
+<section class="formulario">
+       <div class="interface">
+        <h2 class="titulo"> FALE <span> COMIGO.</span></h2>
+
+   <form action="https://formsubmit.co/SEUEMAIL@gmail.com" method="POST">
+  <input type="text" name="nome" placeholder="Seu nome" required>
+  <input type="email" name="email" placeholder="Seu e-mail" required>
+  <input type="tel" name="telefone" placeholder="Seu telefone" required>
+  <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+ <div class="btn-Enviar"><input type="submit" value="ENVIAR"></div>
+</form>
+       </div><!--interface-->
+</section><!--formulario>-->
+  
+    </main>
+     <script src="menu.js"></script>
+</body>
+</html>
