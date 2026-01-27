@@ -131,13 +131,16 @@
 <section class="formulario">
        <div class="interface">
         <h2 class="titulo"> FALE <span> COMIGO.</span></h2>
-"
-   <form action="https://formsubmit.co/isabellejloure@gmail.com" method="POST">
-  <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-  <input type="text" id="telefone" name="telefone" placeholder="Seu telefone">
-  <input type="text" id="email" name="email" placeholder="E-mail" required>
-  <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
- <div class="btn-Enviar"><input type="submit" value="ENVIAR"></div>
+
+  <form name="contato" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contato">
+
+  <input type="text" name="nome" placeholder="Seu nome" required>
+  <input type="email" name="email" placeholder="Seu email" required>
+  <textarea name="mensagem" placeholder="Mensagem"></textarea>
+
+  <button type="submit">Enviar</button>
+</form>>
 </form>
        </div><!--interface-->
 </section><!--formulario>-->
