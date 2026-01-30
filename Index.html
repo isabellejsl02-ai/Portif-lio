@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- GOOGLE FONTS -->
        <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,14 +47,19 @@
                  <i class="bi bi-x-lg"></i>
               </div>
 
-            <nav">
+            <nav class="menu">
             <Ul>
-                <Li><a href="#Inicio">Inicio</a></Li>
-                <Li><a href="#Especialidade">Especialidades</a></Li>
-                <Li><a href="#Sobre">Sobre</a></Li>
+                <a href="#Inicio">Inicio</a>
+                <a href="#Especialidade">Especialidades</a>
+                <a href="#Sobre">Sobre</a>
                 <li><a href="#Entar em Contato"> Entar em Contato</li>
             </Ul>
           </nav>
+
+          <section id="inicio"></section>
+          <section id="especialidades"></section>
+          <section id="sobre"></section>
+          <section id="contato"></section>
 
             </div><!--menu-mobile-->
             <div class="overlay-menu" id="overlay-menu"></div>
@@ -128,21 +133,6 @@
         </div><!--interface-->       
       </Section><!--Sobre-->
 
-<section class="formulario">
-       <div class="interface">
-        <h2 class="titulo"> FALE <span> COMIGO.</span></h2>
-<form name="contato" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contato">
 
-  <input type="text" name="nome" placeholder="Seu nome" required>
-  <input type="email" name="email" placeholder="Seu email" required>
-  <textarea name="mensagem" placeholder="Mensagem"></textarea>
- <div class="btn-Enviar"><input type="submit" value="ENVIAR"></div>
-</form>
-       </div><!--interface-->
-</section><!--formulario>-->
-  
-    </main>
-     <script src="menu.js"></script>
 </body>
 </html>
