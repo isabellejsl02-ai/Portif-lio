@@ -290,11 +290,6 @@ section.Sobre .flex{
 /* RESPONSIVO CELULAR */
 @media (max-width: 700px) {
 
-  /* esconder menu desktop */
-  .menu-desktop {
-    display: none;
-  }
-
   /* ajustar header */
   header > .interface {
     flex-direction: row;
