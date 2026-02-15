@@ -9,7 +9,7 @@
 
 Body{
     background-color: #000;
-    height: 100vh;
+    height: 100%;
 }
 
 nav ul {
@@ -107,7 +107,7 @@ header nav.menu-desktop ul li{
 
 .menu-mobile{
     background-color: #000;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
@@ -336,3 +336,12 @@ section.Sobre .flex{
   }
 
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
