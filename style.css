@@ -35,17 +35,22 @@ a {
     display: flex;
 }
 
-.btn-Contato button{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    border: 0;
+.btn {
     background-color: #6e6868;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 7px ;
-    transition: 0.5s;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
 }
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #000;
+    transform: scale(1.05);
+}
+
 
 h2.titulo{
     color: #fff;
