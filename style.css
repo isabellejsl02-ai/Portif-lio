@@ -79,10 +79,10 @@ header> .interface{
 }
 
 header a{
-    color: #525252;
+    color: #fff;
     text-decoration: none;
-     display: inline-block;transition: 0.5s;
-}   
+    transition: 0.5s;
+}
 
 header a:hover{
     color: #fff;
@@ -91,15 +91,17 @@ header a:hover{
 
 header nav.menu-desktop ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
-    gap: 30px; /* espaço entre os itens */
+    align-items: center;
+    gap: 25px;
 }
 
 header nav.menu-desktop ul li {
-    padding: 0;
+    display: inline-block;
 }
+
 
 /* ESTILO DO MENU-MOBILE */
 
