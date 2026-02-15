@@ -28,7 +28,7 @@ a {
 }
 
 .interface{
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .flex{
@@ -163,9 +163,11 @@ section.topo-do-site{
 }
 
 section.topo-do-site .flex{
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
+   color: #fff;
+    padding: 40px;
+    border-radius: 20px;;
+    margin-top: 45px;
+    transition: 0.5s;
 }
 
 .topo-do-site h1{
@@ -175,7 +177,8 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .text-topo-site h1 span{
-    color: #525252;
+     transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff67;
 }
 
 .topo-do-site .text-topo-site p{
@@ -274,68 +277,57 @@ section.Sobre .flex{
     transition: 0.5s;
 }
 
-/* ESTILO DE FORMULARIO DE ENVIAR */
-section.formulario{
-    padding: 80px 4%;
-}
-
-form{
-    max-width:500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-form input, form textarea{
-    width: 100%;
-    background-color: #3d3d3d;
-    border: 0;
-    outline: 0;
-    padding:20px 15px;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 18px;
-}
-
-form textarea{
-    resize: none;
-    max-height: 200px;
-}
-
-form .btn-Enviar{
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-Enviar input{
-    width: 120px;
-    background-color: #6e6868;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 1.5s;
-}
-
-/* RESPONSIVO - CELULAR */
+/* RESPONSIVO CELULAR */
 @media (max-width: 768px) {
 
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  /* esconder menu desktop */
+  .menu-desktop {
+    display: none;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 8px;
-    padding: 0;
+  /* ajustar header */
+  header > .interface {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  nav ul li {
-    list-style: none;
+  /* organizar seções em coluna */
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* diminuir título principal */
+  .topo-do-site h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  /* diminuir texto */
+  .topo-do-site p {
+    font-size: 16px;
+  }
+
+  /* imagem topo */
+  .img-topo-site img {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  /* especialidades uma embaixo da outra */
+  section.Especialidades .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* sobre */
+  section.Sobre .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Sobre .text-sobre p {
+    text-align: center;
   }
 
 }
