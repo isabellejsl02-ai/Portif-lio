@@ -72,7 +72,7 @@ header{
     padding: 40px 4%;
 }
 
-header> .interface{
+header .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,7 +126,7 @@ header nav.menu-desktop ul li {
     width: 70%;
 }
 
-.menu-mobile.btn-abir-menu ~ overlay-menu{
+.menu-mobile.btn-abir-menu{
     display: block;
 }
 
@@ -304,6 +304,12 @@ section.Sobre .flex{
         flex-direction: column;
         gap: 20px;
     }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 {
