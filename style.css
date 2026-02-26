@@ -288,35 +288,27 @@ section.Sobre .flex{
 }
 
 /* RESPONSIVO CELULAR */
-@media (max-width: 700px)
-{
-    header nav.menu-desktop ul{
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
+@media (max-width: 700px) {
 
-    header{
-        padding: 20px 4%;
-    }
+  header nav.menu-desktop ul{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
 
-    header .interface{
-        flex-direction: column;
-        gap: 20px;
-    }
-}
+  header{
+    padding: 20px 4%;
+  }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  header .interface{
+    flex-direction: column;
+    gap: 20px;
+  }
 
-{
   /* ajustar header */
   header > .interface {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
   }
 
   /* organizar seções em coluna */
@@ -331,24 +323,20 @@ section.Sobre .flex{
     line-height: 32px;
   }
 
-  /* diminuir texto */
   .topo-do-site p {
     font-size: 16px;
   }
 
-  /* imagem topo */
   .img-topo-site img {
     width: 90%;
     margin-top: 20px;
   }
 
-  /* especialidades uma embaixo da outra */
   section.Especialidades .flex {
     flex-direction: column;
     gap: 20px;
   }
 
-  /* sobre */
   section.Sobre .flex {
     flex-direction: column;
     text-align: center;
@@ -358,22 +346,4 @@ section.Sobre .flex{
     text-align: center;
   }
 
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
