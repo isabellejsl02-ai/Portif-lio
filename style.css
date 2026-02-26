@@ -126,7 +126,7 @@ header nav.menu-desktop ul li {
     width: 70%;
 }
 
-.menu-mobile.btn-abir-menu{
+.menu-mobile.btn-abir-menu ~ overlay-menu{
     display: block;
 }
 
@@ -174,7 +174,7 @@ section.topo-do-site{
 
 section.topo-do-site .flex{
    color: #fff;
-    padding: 80px;
+    padding: 40px;
     border-radius: 20px;;
     margin-top: 45px;
     transition: 0.5s;
@@ -290,89 +290,84 @@ section.Sobre .flex{
 /* RESPONSIVO CELULAR */
 @media (max-width: 700px) {
 
-  header nav.menu-desktop ul{
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
+    /* header */
+    header nav.menu-desktop ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 
-  header{
-    padding: 20px 4%;
-  }
+    header {
+        padding: 20px 4%;
+    }
 
-  header .interface{
-    flex-direction: column;
-    gap: 20px;
-  }
+    header .interface {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-  /* ajustar header */
-  header > .interface {
-    flex-direction: column;
-    justify-content: center;
-  }
+    /* organizar tudo em coluna */
+    .flex {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  /* organizar seções em coluna */
-  .flex {
-    flex-direction: column;
-    text-align: center;
-  }
+    /* topo do site */
+    section.topo-do-site {
+        padding: 20px 4%;
+    }
 
-  /* diminuir título principal */
-  .topo-do-site h1 {
-    font-size: 28px;
-    line-height: 32px;
-  }
+    section.topo-do-site .flex {
+        margin-top: 20px;
+        padding: 20px;
+    }
 
-  .topo-do-site p {
-    font-size: 16px;
-  }
+    .topo-do-site h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
 
-  .img-topo-site img {
-    width: 90%;
-    margin-top: 20px;
-  }
+    .topo-do-site .text-topo-site p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
 
-  section.Especialidades .flex {
-    flex-direction: column;
-    gap: 20px;
-  }
+    .img-topo-site img {
+        width: 90%;
+        margin-top: 20px;
+    }
 
-  section.Sobre .flex {
-    flex-direction: column;
-    text-align: center;
-  }
+    /* especialidades */
+    section.Especialidades .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-  .Sobre .text-sobre p {
-    text-align: center;
-  }
+    /* sobre */
+    section.Sobre .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Sobre .text-sobre p {
+        text-align: center;
+    }
 
 }
+* {
+    box-sizing: border-box;
+}
 
-@media (max-width: 700px) {
+body {
+    overflow-x: hidden;
+}
 
-  /* ESCONDE menu normal */
-  .menu-desktop {
-    display: none;
-  }
+* {
+    box-sizing: border-box;
+}
 
-  /* ESCONDE botão contato do header */
-  .btn-Contato {
-    display: none;
-  }
-
-  /* MOSTRA botão hamburguer */
-  .btn-abir-menu {
-    display: block;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-  }
-
-  /* deixa logo e botão alinhados */
-  header .interface {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
